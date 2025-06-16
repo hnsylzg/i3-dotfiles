@@ -1,0 +1,60 @@
+# Alacritty TOML Configuration
+# =============================
+
+# Environment Variables
+# ---------------------
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 10 
+
+[font.normal]
+family = "monospace"
+
+[font.bold]
+family = "monospace"
+
+[font.italic]
+family = "monospace"
+
+[font.bold_italic]
+family = "monospace"
+
+[colors.search.matches]
+foreground = "#eff1f5"
+background = "#6c6f85"
+
+[colors.search.focused_match]
+foreground = "#eff1f5"
+background = "#40a02b"
+# Color Scheme (Nord)
+# -------------------
+[colors.primary]
+background = "#E3EAF5"
+foreground = "#3B4252"
+
+[colors.cursor]
+text = "#E3EAF5"
+cursor = "#899ba6"
+
+[colors.normal]
+black = "#3B4252"
+red = "#BF616A"
+green = "#A3BE8C"
+yellow = "#EBCB8B"
+blue = "#81A1C1"
+magenta = "#B48EAD"
+cyan = "#179299"
+white = "#ECEFF4"
+
+[colors.bright]
+black = "#899BA6"
+red = "#BF616A"
+green = "#4F894C"
+yellow = "#DADA93"
+blue = "#83AFE5"
+magenta = "#D18EC2"
+cyan = "#7FC1CA"
+white = "#E6EEF3"
+
