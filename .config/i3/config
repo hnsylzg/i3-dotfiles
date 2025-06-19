@@ -57,7 +57,6 @@ exec --no-startup-id fcitx5 -d
 exec --no-startup-id dunst
 # exec --no-startup-id xfce4-power-manager
 # exec --no-startup-id qv2ray
-# exec --no-startup-id xdman
 exec --no-startup-id copyq
 exec --no-startup-id sh ~/.fehbg
 exec --no-startup-id picom -b
