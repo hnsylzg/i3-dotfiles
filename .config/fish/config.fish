@@ -6,9 +6,6 @@ if status is-interactive
         source $HOME/.config/fish/aliases.fish
     end
 
-    # Enable the fish greeting   
-    set -U fish_greeting ""
-
     # Enable neofetch or the custom bash script for getting images in neofetch
     #source ~/.config/neofetch/launch-neofetch.sh
     #neofetch
@@ -18,20 +15,15 @@ if status is-interactive
     #colorscript random
 
     # This is needed to make pywal work with the fish shell    
-    if test -e ~/.cache/wal/colors.fish
-        source ~/.cache/wal/colors.fish
-    end
+    # if test -e ~/.config/fish/nord-light.fish
+    #     source ~/.config/fish/nord-light.fish
+    # end
     #cat ~/.cache/wal/sequences    
 
     # Enable yay autocomplete in the fish shell
     complete -c yay -f -n __fish_yay_search_packages
     function __fish_yay_search_packages
         eval yay -Ssq $argv
-    end
-
-    ## Export variable need for qt-theme
-    if type bspwm >>/dev/null 2>&1
-        set -x QT_QPA_PLATFORMTHEME qt6ct
     end
 
     ## Environment setup
@@ -52,5 +44,4 @@ if status is-interactive
 end
 
 set -gx EDITOR nvim
-
 set -x XDG_MENU_PRE arch
